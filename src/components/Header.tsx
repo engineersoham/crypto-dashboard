@@ -33,7 +33,7 @@ const Header: React.FC = () => {
 
   const handleNavigation = (path: string) => {
     navigate(path);
-    setMobileMenuAnchor(null); // Close mobile menu if open
+    setMobileMenuAnchor(null);
   };
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <Box
           sx={{
-            display: { xs: "none", sm: "flex" }, // Hide on small screens
+            display: { xs: "none", sm: "flex" },
             gap: "16px",
           }}
         >
@@ -89,7 +89,7 @@ const Header: React.FC = () => {
         {/* Mobile Menu Icon */}
         <Box
           sx={{
-            display: { xs: "flex", sm: "none" }, // Show only on small screens
+            display: { xs: "flex", sm: "none" },
           }}
         >
           <IconButton

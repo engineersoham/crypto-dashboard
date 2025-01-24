@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
         width: "100%",
         zIndex: 1000,
         "@media (max-width: 600px)": {
-          padding: "12px 0", // Adjust padding for smaller screens
-          fontSize: "0.875rem", // Smaller text on mobile
+          padding: "12px 0",
+          fontSize: "0.875rem",
         },
       }}
     >

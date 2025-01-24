@@ -42,7 +42,7 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true); // Set loading to true before fetching
+        setLoading(true);
         const price = await fetchPriceData(selectedCrypto);
         dispatch(
           setPriceData({
@@ -56,7 +56,7 @@ const Dashboard: React.FC = () => {
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
-        setLoading(false); // Set loading to false after fetching
+        setLoading(false);
       }
     };
 
@@ -107,7 +107,6 @@ const Dashboard: React.FC = () => {
     },
   };
 
-  // Guard against missing or invalid price data
   const renderPriceData = () => {
     if (priceData && typeof priceData.price === "number") {
       return (

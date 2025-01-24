@@ -23,7 +23,7 @@ const History: React.FC = () => {
           (price: [number, number], index: number) => ({
             date: new Date(price[0]).toLocaleDateString(),
             price: price[1],
-            volume: data.total_volumes[index][1], // Match price with volume
+            volume: data.total_volumes[index][1],
           })
         );
         dispatch(setHistoricalData(formattedData));

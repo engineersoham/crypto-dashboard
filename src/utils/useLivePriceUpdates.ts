@@ -18,7 +18,7 @@ const useLivePriceUpdates = () => {
     });
 
     return () => {
-      ws.close(); // Cleanup WebSocket connection on unmount or crypto change
+      ws.close();
     };
   }, [selectedCrypto, dispatch]);
 };

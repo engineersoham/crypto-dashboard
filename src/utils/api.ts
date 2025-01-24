@@ -22,7 +22,7 @@ export const fetchHistoricalData = async (
     {
       params: {
         vs_currency: "usd",
-        days: days, // Adjust the range to speed up the API call
+        days: days,
       },
     }
   );
@@ -58,5 +58,5 @@ export const connectToWebSocket = (
     console.log("WebSocket connection closed");
   };
 
-  return ws; // Return the WebSocket instance for cleanup
+  return ws;
 };
